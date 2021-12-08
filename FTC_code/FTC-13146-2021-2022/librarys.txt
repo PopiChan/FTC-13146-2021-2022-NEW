@@ -1,0 +1,8 @@
+===============================================================================
+to downlowed the libraries do WIN+R then type CMD then type the commands below.
+===============================================================================
+
+opencv-python - pip install opencv-python
+numpy - pip install numpy
+pygame - pip install pygame
+ursina - pip install ursina
