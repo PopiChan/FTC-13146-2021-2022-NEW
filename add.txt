@@ -1,3 +1,2 @@
 threshold/tolerance
 path creation
-add motors/sensors

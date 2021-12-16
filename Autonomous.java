@@ -48,6 +48,10 @@ import java.util.List;
 public class Autonomous extends OpMode {
 
   private ElapsedTime runtime = new ElapsedTime();
+  private DcMotor leftFront;
+  private DcMotor leftBack;
+  private DcMotor rightFront;
+  private DcMotor rightBack;
   List<double[]> path;
   PIDController pidAngle;
   PIDController pidDistance;
@@ -58,6 +62,10 @@ public class Autonomous extends OpMode {
 
   @Override
   public void init() {
+    leftFront = hardwareMap.get(DcMotor.class, "leftFront");
+    leftBack = hardwareMap.get(DcMotor.class, "leftBack");
+    rightFront = hardwareMap.get(DcMotor.class, "rightFront");
+    rightBack = hardwareMap.get(DcMotor.class, "rightBack");
     pidAngle = new PIDController(0.1, 0.0, 0.0);
     pidDistance = new PIDController(0.1, 0.0, 0.0);
   }
